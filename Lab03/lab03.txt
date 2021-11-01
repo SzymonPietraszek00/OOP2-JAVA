@@ -1,0 +1,20 @@
+Zakładamy, że przekazane argumenty metod są sensowne (później będziemy obsługiwać takie sytuacje wyjątkami).
+
+    Proszę przygotować klasę "Student" zawierającą prywatne pola: ID(int), Imie(String) i Nazwisko(String) (oraz ewentualnie inne pola jeśli potrzebne - koniecznie prywatne). Klasa ma zawierać oprócz tego:
+        konstruktor przyjmujący ID, Imie i Nazwisko;
+        metodę wypisującą w jednej linii ID, Imie i Nazwisko;
+        statyczną metodę zwracającą liczbę utworzonych od początku działania programu instancji klasy (czyli obiektów typu "Student").
+
+    Proszę przygotować klasę Wydział przechowującą studentów ID pełniącym rolę klucza. Pola - koniecznie prywatne. W razie potrzeby można dodać do programu pomocnicze klasy, metody itp. Klasa ma zawierać:
+        konstruktor Wydzial() (domyślny lub samodzielnie napisany, wg potrzeb);
+        metodę void dodaj(Student s) dodającą studenta do bazy (jeśli ID już jest w bazie, to niech nic nie robi poza wypisaniem ostrzeżenia);
+	metodę zwracającą Imie i Nazwisko (jak podamy ID) oraz ID (jak podamy Imie i Nazwisko);
+        metodę wypisującą wszystkich studentów w postaci tekstowej.
+
+Główny plik MUSI nazywać się lab03.java (na początku jest małe "l") - nie spełnienie tego warunku skutkuje dostaniem 0 pkt (bo "javac lab03.java" zwróci błąd - czyli się nie kompiluje :-D). Metoda main powinna dodawać do bazy co najmniej 3 studentów:
+
+27236 Jan Nowak
+89347 Ela Kowalska
+09546 Entomologia Motylkowska
+
+oraz wywoływać metodę klasy Wydział wypisującą wszystkich studentów na konsolę. 
